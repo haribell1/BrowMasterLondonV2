@@ -16,7 +16,6 @@ public class Follow {
 	@JoinColumn(name = "isFollowing",referencedColumnName = "id")
 	private Account following;
 	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "isFollowed",referencedColumnName = "id")
 	private Account followed;
 	public Follow() {
 		super();
